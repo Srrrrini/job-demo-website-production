@@ -89,11 +89,8 @@ const Register = () => {
           className='btn btn-block btn-hipster'
           disabled={isLoading}
           onClick={() => {
-            setupUser({
-              currentUser: { email: 'sriniramineni@gmail.com', password: 'secret' },
-              endPoint: 'login',
-              alertText: 'Login Successful! Redirecting...',
-            });
+            loginUser( { email: 'sriniramineni@gmail.com', password: 'secret' }
+        );
           }}
         >
           {isLoading ? 'loading...' : 'demo app'}
